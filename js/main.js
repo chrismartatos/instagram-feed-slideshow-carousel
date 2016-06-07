@@ -85,9 +85,10 @@ function slick_slide_callback()
 	  		slidesToScroll: 3
 		});
 		
-		get_background_image();
+		//Trigger on load
+		get_background_image(); /* Get css background image from attribute: data-background */
 	  	
-  		//Get bg image on slide change - respect the dom - 21 images on load it's a lot of kb.
+  		//Trigger on slide change
   		$slider.on('afterChange', function(event)
   		{  	  
 	  		get_background_image();	   
@@ -96,7 +97,9 @@ function slick_slide_callback()
 	}
 }
 
-/* Get background image - load css background images
+/* Get css background image from attribute: "data-background"
+   Purpose: Load only the images that are showing on slideshow 
+   in order to reduse the size and increase performance.
 ----------------------------------------------------------------*/
 function get_background_image()
 {
