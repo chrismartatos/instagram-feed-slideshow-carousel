@@ -1,12 +1,11 @@
 //DOM ready
 $(function()
 { 
-	//Trigger insta feed:
-   //instgram_feed(); /* Remove comment when you get the token and you're ready to tigger: instgram_feed() */
+   //instgram_feed(); /* Remove comment when you authorize your application and get the token(https://www.instagram.com/developer/). Then tigger: instgram_feed() */
 });
 
 
-/* INSTAGRAM FEED
+/* INSTAGRAM FEED - *Token* needed
 ----------------------------------------------------------------*/
 function instgram_feed()
 {	
@@ -16,7 +15,7 @@ function instgram_feed()
 	//Hashtag to pull images:
 	var hashtag = "hashtag_goes_here";
 	
-	//Authorize application - Read instagram developers guide: https://www.instagram.com/developer/
+	//Authorize application - Read instagram developers guide: 
 	var token = "Read:instagram.com/developer/authentication/";
 	
 	//Tag endpoints API
